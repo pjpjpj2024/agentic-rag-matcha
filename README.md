@@ -105,10 +105,6 @@ agentic-rag-matcha/
     └── debug_logs/
 ```
 
-Naming note: the folder holding the two agent definitions is called `agent_defs/`, not `agents/`. The OpenAI Agents SDK's own installed package is also named `agents`, so a local folder with that same name shadows the SDK on `sys.path` and breaks every `from agents import ...` line the moment you run `python main.py` from the project root. Renaming the local folder avoids that collision.
-
----
-
 ## Technologies
 
 | Component      | Technology                     |
@@ -170,17 +166,6 @@ python main.py
 
 ---
 
-## Running Against Ollama: Why the Client Setup Matters
-
-Ollama's OpenAI-compatible server only implements the older `/v1/chat/completions` endpoint. The OpenAI Agents SDK defaults to the newer `/v1/responses` endpoint and, when no model is explicitly set on an Agent, falls back to an OpenAI-only model name that Ollama has never heard of, so a naive setup fails with a 404 model-not-found error the moment the Report Generator tries to run.
-
-`main.py` avoids this in `configure_ollama_client()` by:
-
-1. Calling `set_default_openai_api("chat_completions")` so the SDK talks to `/v1/chat/completions` instead of `/v1/responses`.
-2. Building an explicit `OpenAIChatCompletionsModel(model=OLLAMA_MODEL, openai_client=client)` bound to the Ollama client and model name, and passing it into both agents (`model=model` in `build_retriever_agent` and `build_report_generator_agent`) instead of relying on the SDK's default model.
-
----
-
 ## Output Files
 
 Each demo query produces three outputs:
@@ -199,27 +184,6 @@ Each demo query produces three outputs:
 
 ---
 
-## Design Decisions
-
-Why OpenAI Agents SDK? It provides a clean abstraction for agents, tools, and handoffs. For two collaborating agents, it's simpler than a full graph-based framework while still clearly demonstrating orchestration.
-
-Why Ollama? Enables local, offline inference with an open-source model, no paid API access required.
-
-Why keyword search? The assignment explicitly allows it. It's simple, deterministic, and easy to explain, without introducing vector infrastructure the task doesn't need.
-
-Why Handoff, not agent-as-tool? It matches the assignment's wording more directly: the Retriever finishes its job, then hands off to the Generator, rather than being called as a subroutine.
-
----
-
-## Future Improvements
-
-* Semantic search using embeddings
-* Vector databases (FAISS, Chroma, Pinecone)
-* Hybrid retrieval and metadata filtering
-* Conversation memory across turns
-* Multi-document / PDF ingestion
-
----
 
 ## Knowledge Base and Sources
 
@@ -233,13 +197,9 @@ Britannica Editors. (2022, February 19). *Tea ceremony*. Encyclopaedia Britannic
 
 ---
 
-## Academic Integrity
 
-This repository was created for an AI engineering programming assessment. The knowledge base was rewritten and summarized from publicly available reference materials to demonstrate Retrieval-Augmented Generation; the original sources are acknowledged above. No sentences were copied verbatim from either source; both were read in full and then re-explained from scratch.
-
----
 
 ## Author
 
 Pichsinee Jarusawee
-Mahidol University - Faculty of Information and Communication Technology (ICT)
+
