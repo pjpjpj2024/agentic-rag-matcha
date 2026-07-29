@@ -9,9 +9,9 @@ RETRIEVER: running search_knowledge()
 GENERATOR: running Report Generator agent
 
 FINAL ANSWER
-Matcha was introduced to Japan through China in the **12th century** via a Zen monk who had studied abroad and returned with tea seeds. This monk established a devotional approach to tea preparation, viewing the process as a spiritual practice. By the **Kamakura period** (late 12th to early 14th century), Zen monks adopted powdered tea to stay alert during long meditation sessions, embedding it into monastic rituals.  
+Matcha was introduced to Japan in the **twelfth century** through China, brought by a Zen monk who had studied abroad and returned with tea seeds. This monk established a devotional approach to tea preparation, treating the process as a spiritual practice. During the **Kamakura period** (roughly a century later), Zen monks began using powdered tea specifically to stay alert during long meditation sessions, integrating it into monastic rituals. By the **sixteenth century**, a tea master under a powerful military ruler formalized the practice into a distinct aesthetic style emphasizing **restraint, simplicity, and quiet**, which remains influential in Japan today.  
 
-Over time, the practice evolved beyond religious use. By the **15th century**, it expanded into social gatherings where friends engaged in discussions about art, calligraphy, and tea utensils, while retaining its Zen roots in discipline and mindfulness. By the **16th century**, a tea master under a military ruler formalized these practices into a distinct aesthetic style emphasizing **restraint, simplicity, and quiet**, a tradition that remains culturally influential in Japan today.
+The custom of ritual tea drinking, originating in China, was first practiced in Japan by Zen monks for meditation. Over time, it became tied to Zen rituals, including ceremonies honoring the tradition's first patriarch. By the **fifteenth century**, the practice expanded beyond religious contexts into social gatherings where art, calligraphy, and tea utensils were discussed, though its roots in Zen discipline and mindfulness remained central.
 
 Execution Summary
 --------------------------------------------------

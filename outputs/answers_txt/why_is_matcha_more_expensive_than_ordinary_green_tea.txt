@@ -2,8 +2,4 @@ USER QUERY
 Why is matcha more expensive than ordinary green tea?
 
 FINAL ANSWER
-Matcha is more expensive than ordinary green tea due to its labor-intensive cultivation and production processes. 
-
-**Cultivation** involves growing tea plants under shade, which enhances chlorophyll levels and produces the vibrant green color characteristic of matcha. Only the youngest buds and top leaves are harvested, a selective process that reduces yield and increases the value of each leaf. 
-
-**Production** requires meticulous steps: freshly picked leaves are steamed to prevent oxidation, then manually processed to remove stems and veins. The remaining leaves are ground into a fine powder using traditional stone mills, a time-consuming method that preserves flavor and texture. These handcrafted techniques, combined with smaller yields, significantly drive up costs compared to mass-produced green teas.
+Matcha is more expensive than ordinary green tea due to its labor-intensive production process and specialized cultivation methods. After harvesting, the leaves are steamed to prevent oxidation, then manually processed to remove stems and veins. The remaining leaves are ground slowly using traditional stone mills, a time-consuming method that contributes to its higher cost compared to typical loose-leaf green tea. Additionally, matcha plants are cultivated under shade, which enhances chlorophyll levels and produces the vibrant green color. Only the youngest buds and top leaves are handpicked, further increasing labor costs and setting it apart from ordinary tea production.
