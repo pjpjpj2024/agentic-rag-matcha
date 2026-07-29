@@ -1,0 +1,19 @@
+USER QUERY
+How is matcha traditionally prepared during the Japanese tea ceremony?
+
+RETRIEVER: running search_knowledge()
+[Chunk 1] Tea Ceremony (score=6.94, keywords=tea, ceremony)
+[Chunk 2] History (score=2.78, keywords=during, tea)
+[Chunk 3] Cultivation (score=1.0, keywords=tea)
+
+GENERATOR: running Report Generator agent
+
+FINAL ANSWER
+During the Japanese tea ceremony, matcha is traditionally prepared through a meticulous process that emphasizes simplicity and mindfulness. The powdered green tea is whisked directly into hot water using a bamboo brush (chasen) until a frothy, smooth texture is achieved. This method, which suspends the tea powder rather than steeping it, yields a distinct flavor profile—nutty, grassy, and mildly bitter—while creating the characteristic texture of matcha. 
+
+The preparation occurs in a dedicated tea room, where the host follows ritualized steps, including cleansing hands and mouth before entering, to uphold the principles of cleanliness and respect. While the standard serving is thin and frothy, a thicker, more concentrated version may be prepared for special occasions. The ceremony itself is guided by values of harmony, tranquility, and reverence for the process, making the act of preparing and serving matcha an integral part of the ritual.
+
+Execution Summary
+--------------------------------------------------
+Retrieved Chunks    : 3
+Model               : qwen3:8b
