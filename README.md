@@ -1,7 +1,5 @@
 # Agentic RAG for Matcha Knowledge Base
 
-> AI Engineer Programming Test - Agentic AI with Retrieval-Augmented Generation (RAG)
-
 A lightweight Retrieval-Augmented Generation (RAG) system built using the OpenAI Agents SDK with a two-agent architecture. A Data Retriever agent searches a local knowledge base with a custom keyword-based tool and hands the results off to a Report Generator agent, which synthesizes a polished final answer.
 
 The system uses a custom keyword-based Top-K retrieval algorithm, a local text-based knowledge base, and Ollama (Qwen3:8B) as the LLM, so the entire project runs locally without paid API access.
@@ -176,7 +174,7 @@ Each demo query produces three outputs:
 
 ---
 
-## Demo Queries
+## Sample User Queries
 
 1. `How was matcha introduced to Japan?` - tests the History section.
 2. `Why is matcha more expensive than ordinary green tea?` - tests Production and Cultivation.
@@ -187,7 +185,7 @@ Each demo query produces three outputs:
 
 ## Knowledge Base and Sources
 
-The knowledge base was rewritten in original language based on facts from the two reference articles below, then split into 8 sections (History, Cultivation, Production, Grades, Health Benefits, Tea Ceremony, Zen Buddhism, Preparation). No sentences were copied verbatim from the source articles. `knowledge_base.txt` intentionally excludes citations, URLs, and footnotes so retrieval content stays clean; full source attribution lives here in the README instead.
+The knowledge base was rewritten in original language by AI based on facts from the two reference articles below, then split into 8 sections (History, Cultivation, Production, Grades, Health Benefits, Tea Ceremony, Zen Buddhism, Preparation). `knowledge_base.txt` intentionally excludes citations, URLs, and footnotes so retrieval content stays clean; full source attribution lives here in the README instead.
 
 ### References (APA)
 
