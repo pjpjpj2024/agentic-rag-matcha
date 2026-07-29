@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+outputs/answers_png/*
+outputs/answers_txt/*
+outputs/debug_logs/*
+!outputs/answers_png/.gitkeep
+!outputs/answers_txt/.gitkeep
+!outputs/debug_logs/.gitkeep
